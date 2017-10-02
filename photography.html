@@ -26,7 +26,7 @@ Kenneth Zirkel	| Photography
 
 
 <!-- Load CSS file -->
-    <link href="assets/bootstrap-ed.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
 	<link href="assets/style.css" media="screen" rel="stylesheet" type="text/css" id="theme_css">
 
 <!-- Load JS files -->
@@ -34,9 +34,25 @@ Kenneth Zirkel	| Photography
 <!--[if lt IE 9]>
   <script src="liquid/html5shiv.js" type="text/javascript"></script>
 <![endif]-->
-<script src="assets/theme2.js " type="text/javascript"></script>
+<!-- different JS for mobile view -->
+<script type="text/javascript">
+    var head = document.getElementsByTagName('head')[0];
+    var js = document.createElement("script");
 
+    js.type = "text/javascript";
 
+    if (screen.width > 500)
+    {
+        js.src = "assets/theme2.js";
+    }
+    else
+    {
+        js.src = "assets/mobile.js";
+    }
+
+    head.appendChild(js);
+    
+</script>
 
 <!-- disable right-click -->
 <script src="assets/rc-disable.js " type="text/javascript"></script>
