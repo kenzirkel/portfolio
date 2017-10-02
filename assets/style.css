@@ -288,10 +288,6 @@ i.fa:focus {
 
 
 
- .resumepage h2.title { 	
-    margin-top:120px; 
-    margin-bottom:0px;  
-} 
 
  .resumepage .button-wrapper {
     text-align:center;
@@ -321,7 +317,7 @@ i.fa:focus {
 
 
 /* Adjustments for Mobile */
-@media only screen and (max-width: 480px), only screen and (max-height: 480px) {
+@media only screen and (max-width: 480px) {
 	header {
 	}
 		
@@ -368,7 +364,7 @@ i.fa:focus {
 /* fix title on home page */    
     
  .resumepage h2.title  { 	
-    margin-top:80px; 
+    margin-top:40px; 
     margin-bottom:0px;  
 } 
 	h3 {
